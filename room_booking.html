@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hostel Room Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hostel Room Booking</h1>
+        <form action="room_booking.php" method="post">
+            <label for="room_number">Select Room:</label>
+            <select id="room_number" name="room_number">
+                <option value="101">Room 101</option>
+                <option value="102">Room 102</option>
+                <option value="103">Room 103</option>
+                <!-- Add more room options -->
+            </select>
+            
+            <label>Check-in Date:</label>
+            <input type="date" id="check_in" name="check_in">
+            
+            <label>Check-out Date:</label>
+            <input type="date" id="check_out" name="check_out">
+            
+            <label>Number of students:</label>
+            <input type="number" id="students" name="students" min="1" max="4">
+            
+            <input type="submit" value="Book Room">
+        </form>
+    </div>
+</body>
+</html>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url(hostel.webp);
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+select,
+input[type="date"],
+input[type="number"],
+input[type="submit"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+</style>

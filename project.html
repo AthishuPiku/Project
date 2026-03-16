@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form action="feedback.php" method="post">
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>Hostel Management</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="admin.html">Admin Login</a></li>
+        <li><a href="student_profile.html">Student profile</a></li>
+        <li><a href="room_booking.html">Room Booking</a></li>
+        <li><a href="hosteller_list.html">Hosteller list</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="Online_payment.html">Online Payments</a></li>
+        <!-- You can replace #login with the appropriate login page link -->
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Hostel Management System</h2>
+    <p font style="font-size: 20px; color: #528529;">Efficiently manage your hostel accommodations with our system.</p>
+    <a href="gmail.html" class="cta-btn">Sign Up</a>
+    <a href="#learnmore" class="cta-btn">Learn More</a>
+  </section>
+  <br>
+<div class="feedback">
+  <h5>feedback</h5>
+  <label for="email">email</label>
+  <input type="email" name="email" >
+  <br>
+  <label for="comment">comment</label>
+  <br>
+  <input type="text" fort style="width: 90%; height: 100px; border-radius: 10px;" placeholder="tell us what u think..... " name="comment">
+  <input type="submit"></input>
+</div>
+<br>
+<style>
+  .feedback{
+    color: rgb(244, 227, 203);
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 250px;
+    background-color: #3498db;
+    text-transform: capitalize;
+    border-radius: 10px;
+  }
+  .feedback h5{
+    text-align: center;
+    font-size: 20px;
+  }
+</style>
+  <!-- Other sections (Features, Services, Testimonials, Footer) can be added here -->
+
+  <footer>
+    <div class="footer-content">
+      <p>Contact us: hostelmanagement@gmail.com | Phone:1234567890</p>
+      <ul class="social-links">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+        <!-- Add actual social media links -->
+      </ul>
+    </div>
+    <p class="copy">&copy; 2023 Hostel Management. All Rights Reserved.</p>
+  </footer>
+
+</form>
+</body>
+</html>
+<style>
+/* Basic CSS styles - Customize as needed */
+
+/* Header styles */
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  background-image: url('c:\Users\athis\Pictures\hostel1.webp');
+}
+.logo {
+  font-size: 24px;
+}
+
+.nav-links { 
+  list-style-type: none;
+  position: static;
+  display: flex;
+  padding: 0%;
+  width: 100%;
+  height: fit-content;
+  background-color: #19b9ce;
+}
+.nav-links a{
+  text-decoration: none;
+  padding: 5px;
+  background-color: #528529;
+  border: 0.3px solid #f2f2f2;
+
+}
+.nav-links a:hover{
+  background-color: #3498db;
+  color: brown;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+/* Hero section styles */
+.hero {
+  text-align: center;
+  padding: 100px 0;
+  background-image: url('./hostel1.webp');
+}
+.hero h2{
+  color: #528529;
+}
+.cta-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-links li {
+  margin-right: 10px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copy {
+  margin-top: 10px;
+}
+</style>
